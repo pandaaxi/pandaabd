@@ -22,13 +22,8 @@
       background_url: '{{$theme_config['background_url']}}',
       description: '{{$description}}',
       i18n: [
-        'zh-CN',
         'en-US',
-        'ja-JP',
-        'vi-VN',
-        'ko-KR',
-        'zh-TW',
-        'fa-IR'
+        'zh-CN'
       ],
       logo: '{{$logo}}'
     }
