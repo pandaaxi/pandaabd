@@ -72,11 +72,11 @@ jobs:
           cache-from: type=gha
           cache-to: type=gha,mode=max
           tags: |
-            ${{ env.REGISTRY }}/${{ github.repository_owner }}/xboard:legacy
-            ${{ env.REGISTRY }}/${{ github.repository_owner }}/xboard:dev
-            ${{ env.REGISTRY }}/${{ github.repository_owner }}/xboard
-            ${{ env.REGISTRY }}/${{ github.repository_owner }}/xboard:latest
-            ${{ env.REGISTRY }}/${{ github.repository_owner }}/xboard:${{ steps.get_version.outputs.version }}
+            ${{ env.REGISTRY }}/${{ github.repository_owner }}/pandabd:legacy
+            ${{ env.REGISTRY }}/${{ github.repository_owner }}/pandabd:dev
+            ${{ env.REGISTRY }}/${{ github.repository_owner }}/pandabd
+            ${{ env.REGISTRY }}/${{ github.repository_owner }}/pandabd:latest
+            ${{ env.REGISTRY }}/${{ github.repository_owner }}/pandabd:${{ steps.get_version.outputs.version }}
           build-args: |
             BUILDKIT_INLINE_CACHE=1
           provenance: false
